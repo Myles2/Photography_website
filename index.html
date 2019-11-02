@@ -1,0 +1,133 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+  <title>My Photography Website</title>
+  <meta name="description" content="My Photography Website">
+  <meta name="author" content="Myles">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css?v=1.0">
+</head>
+<body>
+  <script src="js/scripts.js"></script>
+  <script src="js/headerFunction.js"></script>
+  <header id="navMenu" class="container">
+    <div>
+      <h1 onclick="logo(this)" id="logo" class="top">M</h1>
+      <div id="menu" class="top" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="#">About Me</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </header>
+  <div id="first" class="first"></div>
+  <div id="expand"><button id="close" class="close" onclick="stop()">X</button><img id="expand_img"></div>
+  <div class="photos">
+    <div class="box">
+      <img class="my_images" src="images\IMG_6042.JPG" alt="Stranded Nail Photo">
+      <div class="overlay" onclick="enlarge(this, 'images\\IMG_6042.JPG')"><h2></h2></div>
+    </div>
+    <div class="box">
+      <img class="my_images" src="images\IMG_4334.JPG" alt="Pug Photo">
+      <div class="overlay" onclick="enlarge(this, 'images\\IMG_4334.JPG')"><h2>Pug</h2></div>
+    </div>
+    <div class="box">
+      <img class="my_images" src="images\IMG_3863.JPG" alt="Cattle Photo">
+      <div class="overlay" onclick="enlarge(this, 'images\\IMG_3863.JPG')"><h2></h2></div>
+    </div>
+    <div class="box">  
+      <img class="my_images" src="images\IMG_3984.JPG" alt="Boot Photo">
+      <div class="overlay" onclick="enlarge(this, 'images\\IMG_3984.JPG')"><h2></h2></div>
+    </div>
+    <div class="box">
+      <img class="my_images" src="images\IMG_3997.JPG" alt="Snowy chair Photo">
+      <div class="overlay" onclick="enlarge(this, 'images\\IMG_3997.JPG')"><h2></h2></div>
+    </div>
+    <div class="box">
+      <img class="my_images" src="images\IMG_6086.JPG" alt="Geese Photo">
+      <div class="overlay" onclick="enlarge(this, 'images\\IMG_6086.JPG')"><h2></h2></div>
+    </div>
+    <div class="box">
+      <img class="my_images" src="images\IMG_3879.JPG" alt="Cow Photo">
+      <div class="overlay" onclick="enlarge(this, 'images\\IMG_3879.JPG')"><h2>Cattle</h2></div>
+    </div>
+    <div class="box">  
+      <img class="my_images" src="images\IMG_4047.JPG" alt="Pug Photo">
+      <div class="overlay" onclick="enlarge(this, 'images\\IMG_4047.JPG')"><h2></h2></div>
+    </div>
+    <div class="box">
+      <img class="my_images" src="images\IMG_3994.JPG" alt="Bridge Photo">
+      <div class="overlay" onclick="enlarge(this, 'images\\IMG_3994.JPG')"><h2></h2></div>
+    </div>
+    <div class="box">
+      <img class="my_images" src="images\IMG_6022.JPG" alt="Branch of leaves Photo">
+      <div class="overlay" onclick="enlarge(this, 'images\\IMG_6022.JPG')"><h2>Leaves</h2></div>
+    </div>
+    <div class="box">
+      <img class="my_images" src="images\IMG_5682.JPG" alt="Sunset Flower Photo">
+      <div class="overlay" onclick="enlarge(this, 'images\\IMG_5682.JPG')"><h2></h2></div>
+    </div>
+    <div class="box">
+      <img class="my_images" src="images\IMG_4086.JPG" alt="Pug Photo">
+      <div class="overlay" onclick="enlarge(this, 'images\\IMG_4086.JPG')"><h2></h2></div>
+    </div>
+    <div class="box">
+      <img class="my_images" src="images\IMG_6021.JPG" alt="Blank Log Photo">
+      <div class="overlay" onclick="enlarge(this, 'images\\IMG_6021.JPG')"><h2></h2></div>
+    </div>
+    <div class="box">
+      <img class="my_images" src="images\IMG_3859.JPG" alt="Cotton roll and windmill Photo">
+      <div class="overlay" onclick="enlarge(this, 'images\\IMG_3859.JPG')"><h2></h2></div>
+    </div>
+    <div class="box">
+      <img class="my_images" src="images\IMG_2043.JPG" alt="Mountain and tree Photo">
+      <div class="overlay" onclick="enlarge(this, 'images\\IMG_2043.JPG')"><h2></h2></div>
+    </div>
+    <div class="box">
+      <img class="my_images" src="images\IMG_3975.JPG" alt="Birdhouse Photo">
+      <div class="overlay" onclick="enlarge(this, 'images\\IMG_3975.JPG')"><h2></h2></div>
+    </div>
+    <div class="box">
+      <img class="my_images" src="images\IMG_4043.JPG" alt="Pug Photo">
+      <div class="overlay" onclick="enlarge(this, 'images\\IMG_4043.JPG')"><h2></h2></div>
+    </div>
+    <div class="box">
+      <img class="my_images" src="images\IMG_0796.JPG" alt="Pink flower Photo">
+      <div class="overlay" onclick="enlarge(this, 'images\\IMG_0796.JPG')"><h2>Pink Flowers</h2></div>
+    </div>
+    <div class="box">
+      <img class="my_images" src="images\IMG_4491.JPG" alt="Pug Photo">
+      <div class="overlay" onclick="enlarge(this, 'images\\IMG_4491.JPG')"><h2></h2></div>
+    </div>
+    <div class="box">
+      <img class="my_images" src="images\DJI_0035.JPG" alt="Drone Photo">
+      <div class="overlay" onclick="enlarge(this, 'images\\IMG_0035.JPG')"><h2></h2></div>
+    </div>
+    <div class="box">
+      <img class="my_images" src="images\IMG_4038.JPG" alt="Pug Photo">
+      <div class="overlay" onclick="enlarge(this, 'images\\IMG_4038.JPG')"><h2></h2></div>
+    </div>
+    <div class="box">
+      <img class="my_images" src="images\DJI_0053.JPG" alt="Drone Photo">
+      <div class="overlay" onclick="enlarge(this, 'images\\IMG_0053.JPG')"><h2></h2></div>
+    </div>
+    <div class="box">
+      <img class="my_images" src="images\IMG_4355.JPG" alt="Pug Photo"> 
+      <div class="overlay" onclick="enlarge(this, 'images\\IMG_4355.JPG')"><h2></h2></div>
+    </div>
+  </div>
+  <footer>
+    <p>© 2019 by Myles Brown Photography</p>
+  </footer>
+</body>
+</html>
