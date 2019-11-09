@@ -1,65 +1,12 @@
   body {
     margin: 0;
+    font-family: 'Ubuntu', sans-serif;
   }
 
   button:focus {outline:0;}
 
   .first {
     height: 8vh;
-  }
-
-  .enlarge {
-    position: fixed;
-    height: 90%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.959);
-    z-index: 2;
-  }
-
-  .close {
-    opacity: 0;
-    box-shadow:inset 0px -3px 7px 0px #dfe2eb;
-    background:linear-gradient(to bottom, #ffffff 5%, #c8cacc 100%);
-    background-color:#ffffff;
-    border-radius:3px;
-    border:1px solid #b5b5b5;
-    cursor:pointer;
-    color:#000000;
-    font-family: 'Nunito', sans-serif;
-    font-size: 200%;
-    padding:10px 16px;
-    text-decoration:none;
-    text-shadow:0px 1px 0px #d4d4d4;
-    float: right;
-  }
-
-  .close:hover {
-    background:linear-gradient(to bottom, #c8cacc 5%, #ffffff 100%);
-  	background-color:#c8cacc;
-  }
-
-  .close:active {
-    position:relative;
-	  top:1px;
-  }
-
-  .end {
-    opacity: 1;
-  }
-
-  #expand {
-    z-index: 3;
-  }
-
-  #expand_img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 75%;
-    position: absolute;
-    margin-top: 100px;
-    margin-left: 30vw;
-    width: auto;
   }
   
   header {
@@ -169,8 +116,10 @@
   .photos {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    margin: 0px 3vw
+    margin: 0px 2vw;
+    text-align: center;
   }
 
   .photos img {
@@ -183,6 +132,12 @@
   .box {
     position: relative;
     display: block;
+  }
+
+  .not {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
   }
 
   .my_images {
@@ -224,24 +179,44 @@
     font-family: 'Ubuntu', sans-serif;
   }
 
-  @media only screen and (max-width: 1400px) and (min-width: 1001px){
-    #expand_img {
-      height: 75%;
-      margin-top: 100px;
-      margin-left: 20vw;
+  @media only screen and (max-width: 1000px) and (min-width: 571px){
+    .first {
+      height: 75px;
+    }
+
+    .photos {
+      margin: 0px 1vw;
+    }
+
+    .photos img {
+      max-width: 38vw;
+      max-height: 350px;
+    }
+
+    .overlay {
+      max-height: 350px;
+      max-width: 38vw;
+      font-size: 3vw;
     }
   }
 
-  @media only screen and (max-width: 1000px) {
-    .close {
-      font-size: 120%;
-      padding:8px 16px;
+  @media only screen and (max-width: 570px) {
+    .first {
+      height: 70px;
     }
 
-    #expand_img {
-      height: auto;
-      width: 70%;
-      margin-top: 100px;
-      margin-left: 15%;
+    .photos {
+      margin: 0px 1vw;
+    }
+
+    .photos img {
+      max-width: 400px;
+      max-height: 350px;
+    }
+
+    .overlay {
+      max-height: 350px;
+      max-width: 400px;
+      font-size: 5vw;
     }
   }

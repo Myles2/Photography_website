@@ -11,8 +11,6 @@
   <meta name="author" content="Myles">
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <link rel="stylesheet" type="text/css" href="css/styles.css?v=1.0">
-  <link href="css\lightbox.css" rel="stylesheet" />
-  <script type="text/javascript" src="js\handlebars-v4.4.3.js"></script>
 </head>
 <body>
   <script src="js/scripts.js"></script>
@@ -33,23 +31,7 @@
     </div>
   </header>
   <div id="first" class="first"></div>
-  <div id="photos" class="photos">
-    <script id="photoTemplate" type="text/x-handlebars-template">
-      {{#each pictures}}
-        <div class={{box_class}}>
-          <img class="my_images" src={{img_url}} alt={{alt_name}}>
-          <a href="{{img_url}}" data-lightbox={{group}} data-title={{name}}><div class="overlay"><h2>{{name}}</h2></div></a>
-        </div>
-      {{/each}}
-    </script>
-  </div>
-  <script>
-    lightbox.option({
-      'alwaysShowNavOnTouchDevices': true
-    })
-  </script>
-  <script src="js/main.js"></script>
-  <script src="js\lightbox-plus-jquery.js"></script>
+  <h1>About Me</h1>
   <footer>
     <p>© 2019 by Myles Brown Photography</p>
   </footer>
