@@ -8,8 +8,9 @@ let data = { pictures: [
   {"img_url": "images\\IMG_3863.JPG", "alt_name": "Cattle Photo", "name": "Cattle Series","group": "3", "box_class": "box"},
   {"img_url": "images\\IMG_6498.JPG", "alt_name": "Puppy Photo", "name": "Puppy Series","group": "17", "box_class": "box"},
   {"img_url": "images\\IMG_3984.JPG", "alt_name": "Boot Photo", "name": "","group": "5", "box_class": "box"},
+  {"img_url": "images\\IMG_0001.JPG", "alt_name": "Puppy collage Photo", "name": "Photoshop series","group": "22", "box_class": "box"},
   {"img_url": "images\\IMG_3997.JPG", "alt_name": "Snowy chair Photo", "name": "","group": "6", "box_class": "box"},
-  {"img_url": "images\\IMG_6086.JPG", "alt_name": "Geese Photo", "name": "Geese Photo","group": "7", "box_class": "box"},
+  {"img_url": "images\\IMG_6086.JPG", "alt_name": "Geese Photo", "name": "Geese Series","group": "7", "box_class": "box"},
   {"img_url": "images\\IMG_6444.JPG", "alt_name": "Squirrel Photo", "name": "Squirrel Series","group": "18", "box_class": "box"},
   {"img_url": "images\\DJI_0053.JPG", "alt_name": "Drone Photo", "name": "Drone Series","group": "2", "box_class": "box"},
   {"img_url": "images\\IMG_3994.JPG", "alt_name": "Bridge Photo", "name": "","group": "8", "box_class": "box"},
@@ -43,6 +44,7 @@ let data = { pictures: [
   {"img_url": "images\\IMG_5579.JPG", "alt_name": "Husky Photo", "name": "", "group": "20", "box_class": "not"},
   {"img_url": "images\\IMG_5542.JPG", "alt_name": "Husky Photo", "name": "", "group": "20", "box_class": "not"},
   {"img_url": "images\\IMG_6388.JPG", "alt_name": "Rabbit Photo", "name": "","group": "21", "box_class": "not"},
+  {"img_url": "images\\IMG_0002.JPG", "alt_name": "Lorax Puppy Photo", "name": "Lorax Puppy","group": "22", "box_class": "not"}
 ]};
 
 let template = document.getElementById("photoTemplate").innerHTML;

@@ -1,12 +1,5 @@
 {
   "pictures": [
-    {
-      "name": "https://wallpapersite.com/images/wallpapers/los-glaciares-national-park-1680x1050-lake-argentina-4k-4666.jpg",
-      "img_url": "glacier"
-    },
-    {
-      "name": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Chestnut_Quail-thrush_%2811078463133%29.jpg/1200px-Chestnut_Quail-thrush_%2811078463133%29.jpg",
-      "img_url": "bird"
-    }
+    {}
   ]
 }
