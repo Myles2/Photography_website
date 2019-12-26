@@ -5,7 +5,7 @@ var app = express();
 var mongoose = require("mongoose");
 var PORT = process.env.PORT || 27017;
 
-const mongoDB = 'mongodb+srv://Myles2:DBphoto28@cluster0-wf77h.mongodb.net/photo_form?retryWrites=true&w=majority';
+const mongoDB = 'mongodb+srv://';
 
 mongoose.Promise = global.Promise;
 mongoose.connect(mongoDB, { useNewUrlParser: true });
