@@ -379,7 +379,7 @@
     }
 
     .photos img {
-      max-width: 400px;
+      max-width: 310px;
       max-height: 350px;
     }
 
@@ -387,5 +387,33 @@
       max-height: 350px;
       max-width: 400px;
       font-size: 5vw;
+    }
+
+    /* CSS for About_me.html*/
+    #about-me {
+      margin: 0px;
+      padding: 10px 20px;
+    }
+
+    #about-me h3 {
+      padding: 5px;
+      font-size: 17px;
+    }
+
+    #second {
+      min-height: 0px;
+    }
+
+    /* CSS for Contact.html*/
+    .input-field {
+      width: 200px;
+    }
+
+    #words {
+      padding: 8px;
+    }
+
+    #words h1 {
+      margin: 6px 0px;
     }
   }
