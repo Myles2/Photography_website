@@ -1,0 +1,29 @@
+{
+  "name": "photography_website",
+  "version": "1.0.0",
+  "description": "Media Portfolio",
+  "main": "app.js",
+  "scripts": {
+    "test": "check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Myles2/Photography_website.git"
+  },
+  "author": "Myles2",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Myles2/Photography_website/issues"
+  },
+  "homepage": "https://github.com/Myles2/Photography_website#readme",
+  "devDependencies": {
+    "lg-hash": "^1.0.4",
+    "lg-pager": "^1.0.2",
+    "lg-share": "^1.2.1",
+    "video.js": "^7.14.3",
+    "webpack": "^5.49.0"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

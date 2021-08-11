@@ -13,6 +13,10 @@
     height: 8vh;
   }
   
+  #series_info {
+    text-align: center;
+  }
+
   header {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.999);
@@ -175,12 +179,43 @@
     opacity: 1;
   }
 
+  .view {
+    height: 300px;
+  }
+
   footer {
     background-color: rgb(0, 0, 0);
     color: #fff;
     text-align: center;
     padding: 10px 0px;
     font-family: 'Ubuntu', sans-serif;
+  }
+
+  /* CSS for cg_port.html */
+  
+  .vjs-poster {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 2vw;
+    text-align: center;
+  }
+
+  .video_set {
+    margin: 20px;
+    display: block;
+  }
+
+  .video-js {
+    background-color: black;
+    width: 40vw;
+    height: 25vw;
+    border: 15px groove #778697;
   }
 
   /* CSS for About_me.html*/
@@ -211,6 +246,31 @@
     color: white;
   }
 
+  @keyframes start {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+  }
+
+  #downview {
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transform:rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    animation-name: start;
+    animation-duration: 2.5s;
+    animation-delay: 3.5s;
+    animation-iteration-count: infinite;
+  }
+
   #about-me {
     margin: auto 65px;
     min-height: 130px;
@@ -237,7 +297,7 @@
   }
 
   #contact {
-    background-image: url('../images/IMG_5682.JPG');
+    background-image: url('../images/rl/IMG_5682.JPG');
     height: 220px; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -338,7 +398,7 @@
   }
 
   #bottom_img {
-    background-image: url('../images/IMG_3863.JPG');
+    background-image: url('../images/rl/IMG_3863.JPG');
     height: 180px; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -366,6 +426,11 @@
       max-height: 350px;
       max-width: 38vw;
       font-size: 3vw;
+    }
+
+    .video-js {
+      width: 56vw;
+      height: 34vw;
     }
   }
 
@@ -415,5 +480,11 @@
 
     #words h1 {
       margin: 6px 0px;
+    }
+
+    /* cg_port */
+    .video-js {
+      width: 56vw;
+      height: 34vw;
     }
   }

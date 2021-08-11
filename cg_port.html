@@ -19,6 +19,7 @@
   <meta name="description" content="Picture & Pose Photography">
   <meta name="author" content="Myles">
   <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="/css/video-js.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/styles.css?v=1.0">
   <link href="css/lightbox.css" rel="stylesheet" />
   <script type="text/javascript" src="js/handlebars-v4.4.3.js"></script>
@@ -26,6 +27,7 @@
 <body>
   <script src="js/scripts.js"></script>
   <script src="js/headerFunction.js"></script>
+  <script src="/js/video.min.js"></script>
   <header id="navMenu" class="container">
     <div>
       <h1 onclick="logo(this)" id="logo" class="top">P&P</h1>
@@ -46,19 +48,28 @@
   <h4 id="series_info">Click on Images to see their series</h4>
   <div id="photos" class="photos">
     <script id="photoTemplate" type="text/x-handlebars-template">
-      {{#each pictures}}
+      {{#each cg}}
         <div class={{box_class}}>
           <img class="my_images" src={{img_url}} alt={{alt_name}}>
-          <a href="{{img_url}}" data-lightbox={{group}} data-title={{name}}><div class="overlay"><h2>{{name}}</h2></div></a>
+          <a href="{{img_url}}" data-lightbox={{group}} data-title="{{name}} "><div class="overlay"><h2>{{name}}</h2></div></a>
         </div>
       {{/each}}
     </script>
   </div>
-  <script>
-    lightbox.option({
-      'alwaysShowNavOnTouchDevices': true
-    })
-  </script>
+  <div id="videos" class="videos">
+    <script id="videoTemplate" type="text/x-handlebars-template">
+      {{#each video}}
+        <div class="video_set">
+          <!-- Until I have a place to host videos
+          <video class="video-js" controls preload="metadata" poster={{preview}} controlsList="nodownload"> For static remove data-setup, add controls // data-setup='{"controls": true}' 
+            <source src={{vid_url}} type="video/mp4">
+            Your browser does not support the HTML5 video.
+          </video> -->
+          <iframe class="video-js" src={{vid_url}} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      {{/each}}
+    </script>
+  </div>
   <script src="js/main.js"></script>
   <script src="js\lightbox-plus-jquery.js"></script>
   <footer>
