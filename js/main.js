@@ -52,6 +52,7 @@ let data = { pictures: [
   {"img_url": "images\\cg\\AnvilDark.png", "alt_name": "CG Anvil", "name": "Anvil", "group": "1", "box_class": "box"},
   {"img_url": "images\\cg\\0296.png", "alt_name": "CG Galaxy", "name": "Space", "group": "2", "box_class": "box"},
   {"img_url": "images\\cg\\John.jpg", "alt_name": "CG character", "name": "John's Day Out", "group": "3", "box_class": "box"},
+  {"img_url": "images\\cg\\AHammer.png", "alt_name": "CG Anvil Hammer", "name": "Anvil Hammer", "group": "10", "box_class": "box"},
   {"img_url": "images\\cg\\Donut&Coffee.png", "alt_name": "Donut & Coffee", "name": "Donut & Coffee", "group": "4", "box_class": "box"},
   {"img_url": "images\\cg\\Day2_E.png", "alt_name": "CG Room", "name": "Bedroom", "group": "5", "box_class": "box"},
   {"img_url": "images\\cg\\0090.png", "alt_name": "CG Doorway", "name": "Doorway", "group": "6", "box_class": "box"},
